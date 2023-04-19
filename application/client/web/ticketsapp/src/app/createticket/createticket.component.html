@@ -1,0 +1,67 @@
+<h2 class="screen-align">Createticket</h2>
+<div id="template-irxy" class="gjs-row">
+    <div id="template-i2kk" class="gjs-cell">
+        <div id="template-ik0yd" class="gjs-row">
+            <div id="template-itkfv" class="gjs-cell">
+                <div id="template-ior8q" class="">Start tracking your Tasks & Issues
+                    <br id="template-ioa1d" class="">
+                </div>
+                <div id="template-iatid" class="">Create new ticket</div>
+            </div>
+        </div>
+    </div>
+    <div id="template-ii59b" class="gjs-cell">
+        <label id="template-igsdy" class="label ">Name
+            <br id="template-igjgl" class="">
+        </label>
+        <input id="template-i6n6o" placeholder="enter the name" [(ngModel)]="ticket.name"
+        [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "
+        />
+    </div>
+    <div id="template-ig2i" class="gjs-cell">
+        <label id="template-irzn8" class="label ">Assigness
+            <br id="template-i0mt5" class="">
+        </label>
+        <input id="template-iyiw5" placeholder="enter the assigness" [(ngModel)]="ticket.assigness"
+        [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "
+        />
+    </div>
+    <div id="template-irvh" class="gjs-cell">
+        <label id="template-iprz9" class="label ">Severity</label>
+        <div id="template-ifop6" class=""></div>
+        <div id="template-iuzoi" class="">
+            <ng-select id="template-i09se" name="dynamicdropdown_template-i09se" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.severity"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-ijpg" class="gjs-cell">
+        <label id="template-iudhl" class="label ">Types</label>
+        <div id="template-ickkl" class=""></div>
+        <div id="template-ij70q" class="">
+            <ng-select id="template-igg7i" name="dynamicdropdown_template-igg7i" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.types"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-i8fws" class="gjs-cell">
+        <label id="template-irkcj" class="label ">Status</label>
+        <div id="template-ivn2p" class=""></div>
+        <select id="template-i2smk" [(ngModel)]="ticket.ticketstatus" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="select form-control">
+            <option value="" id="template-iplyw" class="">open</option>
+            <option value="" id="template-ilu23" class="">close</option>
+            <option value="" id="template-ivl6x" class="">inprogress</option>
+        </select>
+    </div>
+    <div id="template-ingz" class="gjs-cell">
+        <label id="template-iu8sw" class="label ">Description</label>
+        <div id="template-i30ry" class="">
+            <ckeditor id="ckeditorspan" [editor]="Editor" [config]="{toolbar:['heading','|','bold','italic','|','bulletedList','numberedList','|','insertTable','|','undo','redo']}"
+            class=""></ckeditor>
+        </div>
+    </div>
+    <div id="template-i0hso" class="gjs-cell">
+        <div id="template-ioic5" (click)="GpCreate()" class="button btn btn-primary ">Create</div>
+    </div>
+</div>

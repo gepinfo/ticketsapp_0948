@@ -1,0 +1,72 @@
+<h2 class="screen-align">Updateticket</h2>
+<div id="template-irxy" class="gjs-row">
+    <div id="template-i2kk" class="gjs-cell">
+        <div id="template-ik0yd" class="gjs-row">
+            <div id="template-itkfv" class="gjs-cell">
+                <div id="template-ior8q" class="">Start tracking your Tasks & Issues
+                    <br id="template-ioa1d" class="">
+                </div>
+                <div id="template-iatid" class="">Update an Ticket</div>
+            </div>
+        </div>
+    </div>
+    <div id="template-ii59b" class="gjs-cell">
+        <label id="template-igsdy" class="label ">Name
+            <br id="template-igjgl" class="">
+        </label>
+        <input id="template-iyqzg" placeholder="enter the name" [(ngModel)]="ticket.name"
+        [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "
+        />
+    </div>
+    <div id="template-ig2i" class="gjs-cell">
+        <label id="template-irzn8" class="label ">Assigness
+            <br id="template-ic53o" class="">
+        </label>
+        <input id="template-iyxh4" placeholder="enter the assigness" [(ngModel)]="ticket.assigness"
+        [ngModelOptions]="{standalone: true}" ngDefaultControl class="input form-control "
+        />
+    </div>
+    <div id="template-irvh" class="gjs-cell">
+        <label id="template-iprz9" class="label ">Severity</label>
+        <div id="template-ifop6" class=""></div>
+        <div id="template-ipnag" class="">
+            <ng-select id="template-it7sp" name="dynamicdropdown_template-it7sp" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.severity"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-ijpg" class="gjs-cell">
+        <label id="template-iudhl" class="label ">Types</label>
+        <div id="template-ickkl" class=""></div>
+        <div id="template-ixrkx" class="">
+            <ng-select id="template-i9zss" name="dynamicdropdown_template-i9zss" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.types"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-i8fws" class="gjs-cell">
+        <label id="template-irkcj" class="label ">Status</label>
+        <select id="template-i0ftg" [(ngModel)]="ticket.ticketstatus"
+        [ngModelOptions]="{standalone: true}" ngDefaultControl class="select form-control">
+            <option value="" id="template-iv48w" class="">open</option>
+            <option value="" id="template-itp4z" class="">close</option>
+            <option value="" id="template-iaf5g" class="">inprogress</option>
+        </select>
+        <div id="template-ivn2p" class=""></div>
+    </div>
+    <div id="template-ingz" class="gjs-cell">
+        <label id="template-iu8sw" class="label ">Description</label>
+        <div id="template-ihhkj" class="">
+            <ckeditor id="ckeditorspan" [editor]="Editor" [config]="{toolbar:['heading','|','bold','italic','|','bulletedList','numberedList','|','insertTable','|','undo','redo']}"
+            class=""></ckeditor>
+        </div>
+    </div>
+    <div id="template-i0hso" class="gjs-cell">
+<a id="template-iqcux" [routerLink]="['/getallhistory']" [queryParams]="{gephistoryid : queryId}"
+        class="">
+View_History</a>
+
+        <div id="template-iivhn" (click)="GpDelete()" class="button btn btn-primary ">Delete</div>
+        <div id="template-itp0x" (click)="GpUpdate()" class="button btn btn-primary ">Update</div>
+    </div>
+</div>
