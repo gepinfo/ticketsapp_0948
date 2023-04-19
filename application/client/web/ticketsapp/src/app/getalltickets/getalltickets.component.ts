@@ -44,6 +44,7 @@ export class GetallticketsComponent implements OnInit {
 
     ngOnInit() {
         this.ticket.created_by = sessionStorage.getItem('email') || ''; 
+        this.GpGetAllValues();
     }
     GpGetAllValues() {
         this.getallticketsService.GpGetAllValues().subscribe((data:any) => {

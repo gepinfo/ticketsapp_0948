@@ -445,56 +445,6 @@ export const resource_types = [
     ]
   },
   {
-    "resource_name": "getallservicetype",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
-    "resource_name": "createservicetype",
-    "resource_type": "screen",
-    "roles": [
-      "admin", "user"
-    ],
-    "components": [{
-      "label_1425": {
-        "id": "878979",
-        "roles": [ "admin" ]
-      },
-      "textbox_6272": {
-        "id": "135979",
-        "roles": [ "admin" ]
-      },
-      "label_2437": {
-        "id": "343979",
-        "roles": [ "admin" ]
-      },
-      "dropdown_73821": {
-        "id": "738291",
-        "roles": [ "admin" ]
-      }
-    }]
-  },
-  {
     "resource_name": "createseverity",
     "resource_type": "screen",
     "roles": [
@@ -521,6 +471,56 @@ export const resource_types = [
   },
   {
     "resource_name": "getallseverity",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "getallservicetype",
+    "resource_type": "screen",
+    "roles": [
+      "admin", "user"
+    ],
+    "components": [{
+      "label_1425": {
+        "id": "878979",
+        "roles": [ "admin" ]
+      },
+      "textbox_6272": {
+        "id": "135979",
+        "roles": [ "admin" ]
+      },
+      "label_2437": {
+        "id": "343979",
+        "roles": [ "admin" ]
+      },
+      "dropdown_73821": {
+        "id": "738291",
+        "roles": [ "admin" ]
+      }
+    }]
+  },
+  {
+    "resource_name": "createservicetype",
     "resource_type": "screen",
     "roles": [
       "admin", "user"

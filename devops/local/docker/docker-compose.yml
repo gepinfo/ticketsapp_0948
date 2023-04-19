@@ -227,7 +227,7 @@ services:
     image: systementry-0948
     container_name: systementry-0948
     ports: 
-      - 8010:8010
+      - 8014:8014
     env_file: .env
     depends_on:
       - mongo
@@ -246,7 +246,7 @@ services:
     image: severity-0948
     container_name: severity-0948
     ports: 
-      - 8011:8011
+      - 8015:8015
     env_file: .env
     depends_on:
       - mongo
@@ -265,7 +265,7 @@ services:
     image: servicetypes-0948
     container_name: servicetypes-0948
     ports: 
-      - 8012:8012
+      - 8016:8016
     env_file: .env
     depends_on:
       - mongo
@@ -284,7 +284,7 @@ services:
     image: ticket-0948
     container_name: ticket-0948
     ports: 
-      - 8013:8013
+      - 8017:8017
     env_file: .env
     depends_on:
       - mongo
