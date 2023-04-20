@@ -24,14 +24,14 @@ import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
-            AppComponent
+                AppComponent
 ],
   imports: [
-UserModule,
+  SefscreenModule,
 HomeModule,
 SignupModule,
 LoginModule,
-  SefscreenModule,
+UserModule,
 FormsModule,
 HttpClientModule,
 VaultadminModule,
@@ -46,10 +46,10 @@ TranslatorModule,
 AppRoutingModule,
 BrowserAnimationsModule,
       BrowserModule,
-  AdminModule
+    AdminModule
 ],
   providers: [
-        	SharedService
+            	SharedService
 ],
   bootstrap: [AppComponent]
 })

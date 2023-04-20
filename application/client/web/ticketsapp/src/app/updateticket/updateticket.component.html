@@ -29,19 +29,23 @@
     <div id="template-irvh" class="gjs-cell">
         <label id="template-iprz9" class="label ">Severity</label>
         <div id="template-ifop6" class=""></div>
-        <div id="template-ipnag" class="">
-            <ng-select id="template-it7sp" name="dynamicdropdown_template-it7sp" [searchable]="true"
-            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.severity"
-            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        <div id="template-ipnag" class=""></div>
+        <div id="template-ioeik" class="">
+            <ng-select id="template-il92h" name="dynamicdropdown_template-il92h" [searchable]="true"
+            [virtualScroll]="true" [items]="severityitemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="ticket.severity" [ngModelOptions]="{standalone: true}" ngDefaultControl
+            (click)="severityGpGetAllValues()" class="form-control "></ng-select>
         </div>
     </div>
     <div id="template-ijpg" class="gjs-cell">
         <label id="template-iudhl" class="label ">Types</label>
         <div id="template-ickkl" class=""></div>
-        <div id="template-ixrkx" class="">
-            <ng-select id="template-i9zss" name="dynamicdropdown_template-i9zss" [searchable]="true"
-            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.types"
-            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        <div id="template-ixrkx" class=""></div>
+        <div id="template-i9lb4" class="">
+            <ng-select id="template-ieog9" name="dynamicdropdown_template-ieog9" [searchable]="true"
+            [virtualScroll]="true" [items]="servicestypeitemArray" bindLabel="name"
+            bindValue="name" [(ngModel)]="ticket.types" [ngModelOptions]="{standalone: true}"
+            ngDefaultControl (click)="servicestypeGpGetAllValues()" class="form-control "></ng-select>
         </div>
     </div>
     <div id="template-i8fws" class="gjs-cell">

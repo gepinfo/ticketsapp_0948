@@ -16,6 +16,8 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export class CreateticketComponent implements OnInit {
     Editor: any = ClassicEditor;
+    severityitemArray: any = [];
+    servicestypeitemArray: any = [];
     public ticket:any = {
         created_date: '',
         created_by: '',
@@ -36,7 +38,8 @@ export class CreateticketComponent implements OnInit {
 
     ngOnInit() {
         this.ticket.created_by = sessionStorage.getItem('email') || ''; 
-        this.GpGetAllValues();
+        this.severityGpGetAllValues();
+        this.servicestypeGpGetAllValues();
     }
     GpCreate() {
         this.createticketService.GpCreate(this.ticket).subscribe((data:any) => {
@@ -52,9 +55,37 @@ export class CreateticketComponent implements OnInit {
             console.log('Error', error);
         });
     }
-    GpGetAllValues() {
-        this.createticketService.GpGetAllValues().subscribe((data:any) => {
+    servicestypeGpGetAllValues() {
+        this.createticketService.servicestypeGpGetAllValues().subscribe((data:any) => {
             console.log(data);
+ 	 	this.servicestypeitemArray = data;
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    severityGpGetAllValues() {
+        this.createticketService.severityGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.severityitemArray = data;
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    severityGpGetAllValues() {
+        this.createticketService.severityGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.severityitemArray = data;
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    servicestypeGpGetAllValues() {
+        this.createticketService.servicestypeGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.servicestypeitemArray = data;
         },
         (error:Error) => {
             console.log('Error', error);

@@ -1,21 +1,21 @@
-<svg version="1.1" baseProfile="full" width="501.0" height="441.0" viewbox="0 0 501 441" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
+<svg version="1.1" baseProfile="full" width="501.0" height="471.0" viewbox="0 0 501 471" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events">
 <desc >#.interface: fill=lightblue
 #.enumeration: fill=lightgreen
 #.type: fill=lightgray
-[&lt;interface&gt;ticket|+created_date: { type: Date; };+created_by: { type: String; };+last_modified_by: { type: String; };+last_modified_date: { type: Date; };+name: { type: String; };+description: { type: String; };+assigness: { type: String; };+severity: { type: String; };+types: { type: String; };+gephistoryid: { type: String; };+ticketstatus: { type: Ticketstatus; }|]
+[&lt;interface&gt;ticket|+created_date: { type: Date; };+created_by: { type: String; };+last_modified_by: { type: String; };+last_modified_date: { type: Date; };+name: { type: String; };+description: { type: String; };+assigness: { type: String; };+severity: { type: String; ref: &quot;severity&quot;; };+types: { type: String; ref: &quot;servicestype&quot;; };+gephistoryid: { type: String; };+ticketstatus: { type: Ticketstatus; }|]
 [&lt;enumeration&gt;Ticketstatus|OPEN;CLOSE;INPROGRESS]</desc>
 <g stroke-width="1.0" text-align="left" font="12pt Helvetica, Arial, sans-serif" font-size="12pt" font-family="Helvetica" font-weight="normal" font-style="normal">
 <g transform="translate(0.5, 0.5)" font-family="Helvetica" font-size="12pt" font-weight="bold" font-style="normal" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="round" stroke="#33322E">
 <g stroke="transparent" fill="transparent">
-<rect x="0.0" y="0.0" height="441.0" width="501.0" stroke="none"></rect>
+<rect x="0.0" y="0.0" height="471.0" width="501.0" stroke="none"></rect>
 </g>
 <g transform="translate(8, 8)" fill="#33322E">
 <g transform="translate(20, 20)">
 <g data-name="ticket">
 <g fill="lightblue" stroke="#33322E" data-name="ticket">
-<rect x="0.0" y="0.0" height="385.0" width="278.0" data-name="ticket"></rect>
+<rect x="0.0" y="0.0" height="415.0" width="278.0" data-name="ticket"></rect>
 <path d="M0.0 31.0 L278.0 31.0" fill="none" data-name="ticket"></path>
-<path d="M0.0 377.0 L278.0 377.0" fill="none" data-name="ticket"></path>
+<path d="M0.0 407.0 L278.0 407.0" fill="none" data-name="ticket"></path>
 </g>
 <g transform="translate(0, 0)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ticket">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="ticket">
@@ -40,17 +40,19 @@
 <text x="0.0" y="193.5" stroke="none" data-name="ticket">+assigness: { type: String</text>
 <text x="0.0" y="208.5" stroke="none" data-name="ticket">}</text>
 <text x="0.0" y="223.5" stroke="none" data-name="ticket">+severity: { type: String</text>
-<text x="0.0" y="238.5" stroke="none" data-name="ticket">}</text>
-<text x="0.0" y="253.5" stroke="none" data-name="ticket">+types: { type: String</text>
-<text x="0.0" y="268.5" stroke="none" data-name="ticket">}</text>
-<text x="0.0" y="283.5" stroke="none" data-name="ticket">+gephistoryid: { type: String</text>
+<text x="0.0" y="238.5" stroke="none" data-name="ticket">ref: &quot;severity&quot;</text>
+<text x="0.0" y="253.5" stroke="none" data-name="ticket">}</text>
+<text x="0.0" y="268.5" stroke="none" data-name="ticket">+types: { type: String</text>
+<text x="0.0" y="283.5" stroke="none" data-name="ticket">ref: &quot;servicestype&quot;</text>
 <text x="0.0" y="298.5" stroke="none" data-name="ticket">}</text>
-<text x="0.0" y="313.5" stroke="none" data-name="ticket">+ticketstatus: { type: Ticketstatus</text>
+<text x="0.0" y="313.5" stroke="none" data-name="ticket">+gephistoryid: { type: String</text>
 <text x="0.0" y="328.5" stroke="none" data-name="ticket">}</text>
+<text x="0.0" y="343.5" stroke="none" data-name="ticket">+ticketstatus: { type: Ticketstatus</text>
+<text x="0.0" y="358.5" stroke="none" data-name="ticket">}</text>
 
 </g>
 </g>
-<g transform="translate(0, 377)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ticket">
+<g transform="translate(0, 407)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="ticket">
 <g transform="translate(8, 8)" fill="#33322E" data-name="ticket">
 
 </g>
@@ -58,16 +60,16 @@
 </g>
 <g data-name="Ticketstatus">
 <g fill="lightgreen" stroke="#33322E" data-name="Ticketstatus">
-<rect x="318.0" y="147.0" height="92.0" width="127.0" data-name="Ticketstatus"></rect>
-<path d="M318.0 178.0 L445.0 178.0" fill="none" data-name="Ticketstatus"></path>
+<rect x="318.0" y="162.0" height="92.0" width="127.0" data-name="Ticketstatus"></rect>
+<path d="M318.0 193.0 L445.0 193.0" fill="none" data-name="Ticketstatus"></path>
 </g>
-<g transform="translate(318, 147)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Ticketstatus">
+<g transform="translate(318, 162)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Ticketstatus">
 <g transform="translate(8, 8)" fill="#33322E" text-align="center" data-name="Ticketstatus">
 <a id="../application/services/diagrams/serviceModels/ticket.ts.Ticketstatus" xlink:href="../application/services/diagrams/serviceModels/ticket.ts"><text x="55.5" y="13.5" stroke="none" text-anchor="middle" data-name="Ticketstatus">Ticketstatus</text></a>
 
 </g>
 </g>
-<g transform="translate(318, 178)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Ticketstatus">
+<g transform="translate(318, 193)" font-family="Helvetica" font-size="12pt" font-weight="normal" font-style="normal" data-name="Ticketstatus">
 <g transform="translate(8, 8)" fill="#33322E" text-align="left" data-name="Ticketstatus">
 <text x="0.0" y="13.5" stroke="none" data-name="Ticketstatus">OPEN</text>
 <text x="0.0" y="28.5" stroke="none" data-name="Ticketstatus">CLOSE</text>

@@ -28,20 +28,24 @@
     </div>
     <div id="template-irvh" class="gjs-cell">
         <label id="template-iprz9" class="label ">Severity</label>
-        <div id="template-ifop6" class=""></div>
-        <div id="template-iuzoi" class="">
-            <ng-select id="template-i09se" name="dynamicdropdown_template-i09se" [searchable]="true"
-            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.severity"
-            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        <div id="template-ielfo" class="">
+            <ng-select id="template-i990i" name="dynamicdropdown_template-i990i" [searchable]="true"
+            [virtualScroll]="true" [items]="severityitemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="ticket.severity" [ngModelOptions]="{standalone: true}" ngDefaultControl
+            (click)="severityGpGetAllValues()" class="form-control "></ng-select>
         </div>
+        <div id="template-ifop6" class=""></div>
+        <div id="template-iuzoi" class=""></div>
     </div>
     <div id="template-ijpg" class="gjs-cell">
         <label id="template-iudhl" class="label ">Types</label>
         <div id="template-ickkl" class=""></div>
-        <div id="template-ij70q" class="">
-            <ng-select id="template-igg7i" name="dynamicdropdown_template-igg7i" [searchable]="true"
-            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="ticket.types"
-            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        <div id="template-ij70q" class=""></div>
+        <div id="template-it636" class="">
+            <ng-select id="template-ickj6" name="dynamicdropdown_template-ickj6" [searchable]="true"
+            [virtualScroll]="true" [items]="servicestypeitemArray" bindLabel="name"
+            bindValue="name" [(ngModel)]="ticket.types" [ngModelOptions]="{standalone: true}"
+            ngDefaultControl (click)="servicestypeGpGetAllValues()" class="form-control "></ng-select>
         </div>
     </div>
     <div id="template-i8fws" class="gjs-cell">

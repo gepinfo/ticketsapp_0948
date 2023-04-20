@@ -12,8 +12,8 @@ export const ticketSchema = new Schema({
    name: { type: String },
    description: { type: String },
    assigness: { type: String },
-   severity: { type: String },
-   types: { type: String },
+   severity: { type: Schema.Types.String, ref: 'severity' },
+   types: { type: Schema.Types.String, ref: 'servicestype' },
    gephistoryid: { type: String },
    ticketstatus: { type: String, enum: Ticketstatus }
 })

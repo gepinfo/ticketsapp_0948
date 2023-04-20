@@ -29,10 +29,20 @@ export class UpdateticketService {
         let jwt_token = sessionStorage.getItem('JwtToken');
  	 	return this.http.get(this.sharedService.WEB_API + '/ticket/' + ticketId + `?jwt_token=${jwt_token}`);
     }
-    (): Observable<any> {
-        
+    servicestypeGpGetAllValues(): Observable<any> {
+        let jwt_token = sessionStorage.getItem('JwtToken');
+ 	 	return this.http.get(this.sharedService.WEB_API + '/servicestype' + `?jwt_token=${jwt_token}`);
     }
-    (): Observable<any> {
-        
+    severityGpGetAllValues(): Observable<any> {
+        let jwt_token = sessionStorage.getItem('JwtToken');
+ 	 	return this.http.get(this.sharedService.WEB_API + '/severity' + `?jwt_token=${jwt_token}`);
+    }
+    severityGpGetAllValues(): Observable<any> {
+        let jwt_token = sessionStorage.getItem('JwtToken');
+ 	 	return this.http.get(this.sharedService.WEB_API + '/severity' + `?jwt_token=${jwt_token}`);
+    }
+    servicestypeGpGetAllValues(): Observable<any> {
+        let jwt_token = sessionStorage.getItem('JwtToken');
+ 	 	return this.http.get(this.sharedService.WEB_API + '/servicestype' + `?jwt_token=${jwt_token}`);
     }
 }

@@ -19,6 +19,8 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 export class UpdateticketComponent implements OnInit {
     queryId: any;
     Editor: any = ClassicEditor;
+    severityitemArray: any = [];
+    servicestypeitemArray: any = [];
     public ticket:any = {
         created_date: '',
         created_by: '',
@@ -41,8 +43,9 @@ export class UpdateticketComponent implements OnInit {
 
     ngOnInit() {
         this.ticket.created_by = sessionStorage.getItem('email') || ''; 
-        this.GpGetAllValues();
         this.GpGetEntityById();
+        this.severityGpGetAllValues();
+        this.servicestypeGpGetAllValues();
             this.activatedRoute.queryParams.subscribe(params => { 
  	 	this.queryId = params['id'];
             });
@@ -61,9 +64,19 @@ export class UpdateticketComponent implements OnInit {
             console.log('Error', error);
         });
     }
-    GpGetAllValues() {
-        this.updateticketService.GpGetAllValues().subscribe((data:any) => {
+    servicestypeGpGetAllValues() {
+        this.updateticketService.servicestypeGpGetAllValues().subscribe((data:any) => {
             console.log(data);
+ 	 	this.servicestypeitemArray = data;
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    severityGpGetAllValues() {
+        this.updateticketService.severityGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.severityitemArray = data;
         },
         (error:Error) => {
             console.log('Error', error);
@@ -94,6 +107,24 @@ export class UpdateticketComponent implements OnInit {
     GpGetEntityById() {
         this.updateticketService.GpGetEntityById(this.queryId).subscribe((data:any) => {
             this.ticket = data
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    severityGpGetAllValues() {
+        this.updateticketService.severityGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.severityitemArray = data;
+        },
+        (error:Error) => {
+            console.log('Error', error);
+        });
+    }
+    servicestypeGpGetAllValues() {
+        this.updateticketService.servicestypeGpGetAllValues().subscribe((data:any) => {
+            console.log(data);
+ 	 	this.servicestypeitemArray = data;
         },
         (error:Error) => {
             console.log('Error', error);

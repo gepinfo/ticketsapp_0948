@@ -8,8 +8,8 @@ export interface ticket
    name: { type: String },
    description: { type: String },
    assigness: { type: String },
-   severity: { type: String },
-   types: { type: String },
+   severity: { type: String, ref: 'severity' },
+   types: { type: String, ref: 'servicestype' },
    gephistoryid: { type: String },
    ticketstatus: { type: Ticketstatus }
 }
